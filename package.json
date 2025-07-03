@@ -1,0 +1,23 @@
+{
+  "name": "cloud_flex",
+  "version": "1.0.0",
+  "description": "landing page",
+  "source": "index.index.html",
+  "scripts": {
+    "sass:watch": "sass --style=expanded --watch styles:dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Punyansky/CLOUD_FLEX_lending.git"
+  },
+  "author": "Doma punyansky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Punyansky/CLOUD_FLEX_lending/issues"
+  },
+  "homepage": "https://github.com/Punyansky/CLOUD_FLEX_lending#readme",
+  "devDependencies": {
+    "parcel": "^2.15.4",
+    "sass": "^1.89.2"
+  }
+}
