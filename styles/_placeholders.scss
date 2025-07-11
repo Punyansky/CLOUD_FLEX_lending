@@ -1,0 +1,19 @@
+@use 'variables' as v;
+
+
+
+
+%hover-black {
+    &:hover {
+        cursor: pointer;
+        color: v.$black-color;
+    }
+}
+
+%hover-black-icon {
+    &:hover {
+        cursor: pointer;
+        filter: invert(1);
+        
+    }
+}
