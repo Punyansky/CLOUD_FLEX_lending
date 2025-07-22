@@ -1,0 +1,15 @@
+
+@use 'variables' as v;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: v.$blue-color;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
