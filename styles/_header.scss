@@ -7,7 +7,7 @@
 .header {
   width: 100%;
   // color.adjust(v.$white-color, $alpha: -0.85)
-  background-color: v.$blue-color;
+  background-color: color.adjust(v.$white-color, $alpha: -0.85);
 
   border: {
     bottom: {
@@ -29,6 +29,8 @@
 
       border-right: 1px solid v.$white-color;
       @include m.d-flex(center, center);
+      text-wrap: nowrap;
+      
 
 
 
@@ -41,6 +43,7 @@
 
         span {
           font-weight: 700;
+          margin-right: 10px;
         }
 
         @extend %hover-black;
@@ -63,6 +66,8 @@
             font-weight: 500;
             color: v.$white-color;
             @extend %hover-black;
+            margin-right: 10px;
+            text-wrap: nowrap;
           }
 
 
@@ -70,10 +75,9 @@
 
 
       }
-      @media (max-width: v.$media-lg) {
-        .list {
 
-        }
+      @media (max-width: v.$media-lg) {
+        .list {}
       }
 
     }
@@ -84,20 +88,22 @@
       padding: 0 30px;
       border-right: 1px solid v.$white-color;
       border-left: 1px solid v.$white-color;
-      
+
 
       &-link {
-        
+
         font-size: 16px;
         font-weight: 700;
         color: v.$white-color;
         @extend %hover-black;
+        text-wrap: nowrap;
 
       }
     }
+
     .globe {
       &-link {
-        &-icon{
+        &-icon {
           padding: 0 12px 0 30px;
           height: 27px;
           @extend %hover-black-icon;
