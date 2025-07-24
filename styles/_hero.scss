@@ -117,6 +117,10 @@
             @include m.font (25px, 400, v.$black-color);
             @include m.d-flex(center, center);
 
+            &:hover {
+                color: v.$white-color;
+            }
+
         }
 
         @media (max-width: v.$media-md) {
@@ -145,6 +149,7 @@
                 @include m.d-flex(center, center);
                 padding: 18px auto;
 
+
             }
 
             &-img {
@@ -161,7 +166,7 @@
     }
 
     &__scroll {
-        @include m.position (absolute, 1, -1, bottom, left, 300px, 10px);
+        @include m.position (absolute, 1, -1, bottom, left, 140px, 10px);
 
         &-content {
             position: relative;
@@ -183,7 +188,7 @@
         }
     }
 
-    
+
 
 
 }
