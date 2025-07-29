@@ -1,15 +1,24 @@
-
 @use 'variables' as v;
 
 * {
   box-sizing: border-box;
+  
+}
+html, body {
+  overflow-x: hidden;
 }
 
 body {
   font-family: "Roboto", sans-serif;
   background-color: v.$blue-color;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  
 }
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
+  
 }
