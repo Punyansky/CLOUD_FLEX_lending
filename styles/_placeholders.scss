@@ -22,6 +22,16 @@
     &:hover {
         cursor: pointer;
         filter: invert(1);
-        
+
     }
+}
+
+hr {
+    
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
 }

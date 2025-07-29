@@ -1,0 +1,212 @@
+@use 'variables' as v;
+@use 'sass:color';
+@use 'mixins' as m;
+@use 'placeholders';
+
+.about-section {
+    padding: 100px 0 0 0;
+    margin-bottom: 0;
+
+    .about {
+        margin: 0 auto;
+        @include m.d-flex(start, center, nowrap, column, 0, 0);
+
+        &__quality {
+            width: 100%;
+            height: 500px;
+            padding: 0 0 50px 15px;
+            background: url('../assets/webp/macbook.webp') 100% 30%/620px no-repeat;
+
+            &-title {
+                @include m.font (45px, 500, v.$white-color);
+                text-align: left;
+                line-height: 1.4;
+                padding-bottom: 20px;
+                max-width: 250px;
+
+            }
+
+            &-description {
+                @include m.font (20px, 300, v.$white-color);
+                text-align: left;
+                line-height: 1.6;
+                max-width: 590px;
+            }
+
+
+
+            @media (max-width: v.$media-lg) {
+
+                background: linear-gradient(180deg, rgba(52, 109, 234, 1) 0%, rgba(30, 94, 232, 0) 100%),
+                    url('../assets/webp/macbook.webp') 100% 70%/580px no-repeat;
+
+
+                &-title {
+                    @include m.font (35px, 500, v.$white-color);
+                    text-align: left;
+                    line-height: 1.4;
+                    padding-bottom: 20px;
+                    max-width: 250px;
+
+                }
+
+                &-description {
+                    @include m.font (16px, 300, v.$white-color);
+                    text-align: left;
+                    line-height: 1.6;
+                    max-width: 500px;
+                }
+            }
+
+            @media (max-width: v.$media-md) {
+                background: url('../assets/webp/macbook.webp') 170% 95%/500px no-repeat;
+            }
+
+            @media (max-width: v.$media-sm) {
+                background: url('../assets/webp/macbook.webp') 250% 95%/400px no-repeat;
+            }
+
+            @media (max-width: v.$media-min) {
+                background: url('../assets/webp/macbook.webp') 560% 95%/350px no-repeat;
+            }
+
+        }
+
+        &__touch {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            padding: 0 15px 50px 0;
+            @include m.d-flex(end, end, nowrap, column, 0, 20px);
+
+            &::before {
+                content: "";
+                @include m.position (absolute, -1, -1, top, left, 0, -180px);
+                width: 100%;
+                height: 100%;
+                background: url('../assets/webp/telephone.webp') 0 0/800px no-repeat;
+                rotate: z 15deg;
+
+            }
+
+
+            &-title {
+                @include m.font (45px, 500, v.$white-color);
+                text-align: left;
+                line-height: 1.4;
+                padding-bottom: 20px;
+
+                @include m.position (relative, 1, -1, top, right, 0, 0);
+
+
+            }
+
+            &-description {
+                @include m.font (20px, 300, v.$white-color);
+                text-align: right;
+                line-height: 1.6;
+                max-width: 460px;
+            }
+
+            @media (max-width: v.$media-lg) {
+                &-title {
+                    @include m.font (35px, 500, v.$white-color);
+                    text-align: left;
+                    line-height: 1.4;
+                    padding-bottom: 20px;
+                    max-width: 250px;
+
+                }
+
+                &-description {
+                    @include m.font (16px, 300, v.$white-color);
+                    text-align: left;
+                    line-height: 1.6;
+                    max-width: 380px;
+                }
+
+                &::before {
+                    content: "";
+                    @include m.position (absolute, -1, -1, top, left, 0, -180px);
+                    width: 100%;
+                    height: 100%;
+
+                    background: linear-gradient(45deg, rgba(52, 109, 234, 1) 0%, rgba(30, 94, 232, 0) 100%),
+                        url('../assets/webp/telephone.webp') 0 0/730px no-repeat;
+
+
+                }
+            }
+
+            @media (max-width: v.$media-md) {
+                @include m.d-flex(start, end, nowrap, column, 0, 20px);
+
+
+                &::before {
+
+                    @include m.position (absolute, -1, -1, top, left, 0, -180px);
+
+                    background: url('../assets/webp/telephone.webp') 37px 113px/80% no-repeat;
+                    rotate: z 60deg;
+
+
+                }
+            }
+
+
+
+        }
+
+        &__approach {
+            width: 100%;
+            height: 855px;
+            padding: 50px 0 50px 15px;
+            background: url('../assets/webp/cactus.webp') 100% 30%/500px no-repeat;
+            @include m.d-flex(center, start, nowrap, column, 20px, 20px);
+
+
+            &-title {
+                @include m.font (45px, 500, v.$white-color);
+                text-align: left;
+                line-height: 1.4;
+                padding-bottom: 20px;
+                max-width: 400px;
+
+            }
+
+            &-description {
+                @include m.font (20px, 300, v.$white-color);
+                text-align: left;
+                line-height: 1.6;
+                max-width: 730px;
+            }
+
+            @media (max-width: v.$media-lg) {
+                background: linear-gradient(180deg, rgba(52, 109, 234, 1) 0%, rgba(30, 94, 232, 0) 100%),
+                        url('../assets/webp/cactus.webp') 100% 30%/500px no-repeat;
+                &-title {
+                    @include m.font (35px, 500, v.$white-color);
+                    text-align: left;
+                    line-height: 1.4;
+                    padding-bottom: 20px;
+                    max-width: 250px;
+
+                }
+
+                &-description {
+                    @include m.font (16px, 300, v.$white-color);
+                    text-align: left;
+                    line-height: 1.6;
+                    max-width: 500px;
+                }
+            }
+            @media (max-width: v.$media-md) {
+                @include m.d-flex(start, start, nowrap, column, 20px, 20px);
+                background: url('../assets/webp/cactus.webp') 100% 156%/400px no-repeat;
+            }
+
+
+        }
+    }
+
+}
