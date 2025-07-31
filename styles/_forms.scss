@@ -1,0 +1,116 @@
+@use 'variables' as v;
+@use 'sass:color';
+@use 'mixins' as m;
+@use 'placeholders';
+
+
+
+.forms-section {
+    padding: 200px 0 300px 0;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+
+    @media (max-width: v.$media-md) {
+        padding-top: 300px;
+    }
+
+    &__bg-cloud {
+
+        background: url('../assets/webp/left-cloud.webp') center/contain no-repeat;
+        width: 700px;
+        height: 250px;
+        
+    }
+
+    .cloud-left {
+        @include m.position (absolute, -1, -1, top, left, 0, -200px);
+
+        @media (max-width: v.$media-md) {
+            @include m.position (absolute, -1, -1, top, left, 120px, -200px);
+        }
+    }
+
+    .cloud-right {
+        @include m.position (absolute, -1, -1, bottom, right, 0, -400px);
+        background: none;
+        background: url('../assets/webp/right-cloud.webp') center/contain no-repeat;
+        width: 1120px;
+        height: 400px;
+    }
+
+    .forms__wrapper {
+        width: 100%;
+        height: 400px;
+        margin: 0 auto;
+        padding: 50px 0;
+
+        // @include m.d-flex(center, center, nowrap, column, 10px, 15px);
+        .form {
+            @include m.d-flex(space-between, center, nowrap, column, 10px, 25px);
+
+            &__title {
+                @include m.font (36px, 300, v.$black-color);
+                max-width: 584px;
+            }
+
+            .input-name,
+            .input-email,
+            .input-text {
+                width: 622px;
+                height: 47px;
+                border-radius: 20px;
+                background-color: v.$white-color;
+                padding-left: 20px;
+                @include m.font (25px, 100, v.$black-color);
+
+                &:hover {
+                    scale: 1.1;
+                }
+
+                &::placeholder {
+                    @include m.font (25px, 100, v.$black-color);
+
+
+                }
+            }
+
+            &__btn {
+                background-color: v.$black-color;
+                width: 622px;
+                height: 47px;
+                @include m.font (25px, 400);
+                border-radius: 20px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: color.adjust(v.$black-color, $alpha: -0.35);
+                }
+
+            }
+
+            @media (max-width: v.$media-md) {
+
+
+                .input-name,
+                .input-email,
+                .input-text,
+                &__btn {
+                    width: 500px;
+                }
+
+                .cloud-left {
+                    @include m.position (absolute, -1, -1, top, left, 0, -200px);
+                }
+
+                .cloud-right {
+                    @include m.position (absolute, -1, -1, bottom, right, 0, -400px);
+
+                }
+            }
+
+
+        }
+
+    }
+}
