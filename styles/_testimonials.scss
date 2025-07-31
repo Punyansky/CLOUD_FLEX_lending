@@ -1,0 +1,177 @@
+@use 'variables' as v;
+@use 'sass:color';
+@use 'mixins' as m;
+@use 'placeholders';
+
+
+.testimonial {
+    position: relative;
+    padding: 50px 0 100px 0;
+    margin: 0 auto;
+    @media (max-width: v.$media-lg) {
+        height: 450px;
+
+    }
+    @include m.d-flex(start, center, nowrap, column, 0, 90px);
+
+    &__title {
+        @include m.font (60px, 400, v.$white-color);
+        @include m.d-flex(center, center);
+
+        @media (max-width: v.$media-lg) {
+            @include m.font (35px, 300, v.$white-color);
+
+        }
+    }
+}
+
+.slider {
+    @include m.d-flex(space-around, center, nowrap, row, 20px, 0);
+
+    @media (max-width: v.$media-lg) {
+        height: 300px;
+
+    }
+
+
+    &__left-btn {
+        background-color: color.adjust(v.$white-color, $alpha: -0.85);
+        width: 67px;
+        height: 67px;
+        border-radius: 20px;
+        rotate: 45deg;
+        position: relative;
+        
+
+        @media (max-width: v.$media-lg) {
+            scale: 0.9;
+            top: unset;
+            bottom: -215px;
+            left: 160px;
+
+        }
+
+        // @include m.position (absolute, 1, -1, bottom, left, 120px, 250px);
+
+        &:hover {
+            cursor: pointer;
+
+            scale: 1.1;
+        }
+
+
+        &-img {
+            width: 35px;
+            height: 22px;
+            rotate: -45deg;
+            @extend %hover-black-icon;
+
+        }
+    }
+
+
+    &__card {
+        position: relative;
+        width: 500px;
+        height: 275px;
+        background: url("/assets/webp/testi-card.webp") 100% 100%/500px no-repeat;
+
+        @media (max-width: v.$media-lg) {
+            scale: 0.9;
+
+        }
+
+        &-avatar {
+            width: 47px;
+            height: 47px;
+            translate: 26px 9px;
+            margin-bottom: 25px;
+        }
+
+        &-blockquote {
+            @include m.font (20px, 300, v.$white-color);
+            max-width: 400px;
+            @include m.d-flex(center, center);
+            text-align: justify;
+            line-height: 1.26;
+            padding-left: 50px;
+
+            @media (max-width: v.$media-lg) {
+                @include m.font (16px, 300, v.$white-color);
+
+            }
+
+
+        }
+
+
+    }
+
+
+
+    &__right-btn {
+        background-color: color.adjust(v.$white-color, $alpha: -0.85);
+        width: 67px;
+        height: 67px;
+        border-radius: 20px;
+        rotate: 45deg;
+        position: relative;
+        
+
+        @media (max-width: v.$media-lg) {
+            scale: 0.9;
+            @media (max-width: v.$media-lg) {
+            scale: 0.9;
+            top: unset;
+            bottom: -215px;
+            right: 170px;
+
+        }
+            
+        }
+
+        // @include m.position (absolute, 1, -1, bottom, right, 120px, 290px);
+        &:hover {
+            cursor: pointer;
+
+            scale: 1.1;
+        }
+
+        &-img {
+            width: 35px;
+            height: 22px;
+            rotate: -45deg;
+            @extend %hover-black-icon;
+
+
+        }
+    }
+
+    &__points {
+        padding:  0;
+        @include m.position (absolute, 1, -1, bottom, right, 0, 45%);
+        @include m.d-flex(space-between, bottom, nowrap, row, 10px, 15px);
+        position:  absolute;
+        padding-bottom: 20px;
+
+        @media (max-width: v.$media-lg) {
+            scale: 0.8;
+            @include m.position (absolute, 1, -1, bottom, right, -23%, 45%);
+
+        }
+
+        &-item {
+            background-color: v.$white-color;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+
+            &:hover {
+                cursor: pointer;
+                background-color: darkgrey;
+
+                scale: 0.8;
+            }
+        }
+    }
+}
