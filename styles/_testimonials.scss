@@ -6,12 +6,14 @@
 
 .testimonial {
     position: relative;
-    padding: 50px 0 200px 0;
+    padding: 50px 0 150px 50px;
     margin: 0 auto;
+
     @media (max-width: v.$media-lg) {
         height: 450px;
 
     }
+
     @include m.d-flex(start, center, nowrap, column, 0, 90px);
 
     &__title {
@@ -41,7 +43,14 @@
         border-radius: 20px;
         rotate: 45deg;
         position: relative;
-        
+        z-index: 999;
+
+        &:hover {
+            cursor: pointer;
+
+            scale: 1.1;
+        }
+
 
         @media (max-width: v.$media-lg) {
             scale: 0.9;
@@ -53,11 +62,7 @@
 
         // @include m.position (absolute, 1, -1, bottom, left, 120px, 250px);
 
-        &:hover {
-            cursor: pointer;
 
-            scale: 1.1;
-        }
 
 
         &-img {
@@ -116,26 +121,30 @@
         border-radius: 20px;
         rotate: 45deg;
         position: relative;
-        
+        z-index: 999;
 
-        @media (max-width: v.$media-lg) {
-            scale: 0.9;
-            @media (max-width: v.$media-lg) {
-            scale: 0.9;
-            top: unset;
-            bottom: -215px;
-            right: 170px;
-
-        }
-            
-        }
-
-        // @include m.position (absolute, 1, -1, bottom, right, 120px, 290px);
         &:hover {
             cursor: pointer;
 
             scale: 1.1;
         }
+
+
+        @media (max-width: v.$media-lg) {
+            scale: 0.9;
+
+            @media (max-width: v.$media-lg) {
+                scale: 0.9;
+                top: unset;
+                bottom: -215px;
+                right: 170px;
+
+            }
+
+        }
+
+        // @include m.position (absolute, 1, -1, bottom, right, 120px, 290px);
+
 
         &-img {
             width: 35px;
@@ -148,16 +157,19 @@
     }
 
     &__points {
-        padding:  0;
-        @include m.position (absolute, 1, -1, bottom, right, 0, 45%);
+        
+        @include m.position (relative, 1, -1, bottom, right, 0, 45%);
         @include m.d-flex(space-between, bottom, nowrap, row, 10px, 15px);
-        position:  absolute;
+        position: absolute;
         padding-bottom: 20px;
 
         @media (max-width: v.$media-lg) {
             scale: 0.8;
-            @include m.position (absolute, 1, -1, bottom, right, -23%, 45%);
+            @include m.position (absolute, 1, -1, bottom, right, -23%, 40%);
 
+        }
+        @media (max-width: v.$media-sm){
+            @include m.position (absolute, 1, -1, bottom, right, -23%, 39%);
         }
 
         &-item {
