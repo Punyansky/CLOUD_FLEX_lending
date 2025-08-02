@@ -13,9 +13,10 @@
 
     &-wrapper {
         @include m.d-flex(space-between, center, nowrap, row, 0, 0);
-        @media (max-width: v.$media-md){
+
+        @media (max-width: v.$media-md) {
             @include m.d-flex(start, center, nowrap, column-reverse, 0, 20px);
-            
+
         }
     }
 
@@ -36,14 +37,18 @@
     &__copy-item {
         @include m.font (14px, 100, v.$white-color);
     }
+
     &__icons {
         @include m.d-flex(space-between, center, nowrap, row, 44px, 0);
-        .linkedin-icon, .facebook-icon, .instagram-icon {
+
+        .linkedin-icon,
+        .facebook-icon,
+        .instagram-icon {
             width: 25px;
             height: 23px;
-            
+
             @extend %hover-black-icon;
-            
+
         }
     }
 }

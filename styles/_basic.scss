@@ -2,9 +2,11 @@
 
 * {
   box-sizing: border-box;
-  
+
 }
-html, body {
+
+html,
+body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
@@ -15,11 +17,11 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  
+
 }
 
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  
+
 }

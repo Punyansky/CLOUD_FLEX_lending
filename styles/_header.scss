@@ -21,11 +21,11 @@
     height: 100%;
     height: 50px;
     @include m.d-flex(start, center);
-    
+
     @media (max-width: v.$media-md) {
-        &-list {
-          display: none;
-        }
+      &-list {
+        display: none;
+      }
     }
 
 
@@ -36,7 +36,7 @@
       border-right: 1px solid v.$white-color;
       @include m.d-flex(center, center);
       text-wrap: nowrap;
-      
+
 
 
 
@@ -82,7 +82,7 @@
 
       }
 
-      
+
 
     }
 
@@ -114,8 +114,12 @@
         }
       }
     }
+
     @media (max-width: v.$media-md) {
-      &__links, .covid , .globe{
+
+      &__links,
+      .covid,
+      .globe {
         display: none;
       }
 

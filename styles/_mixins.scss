@@ -18,7 +18,7 @@
   position: $type;
   z-index: $zIndex;
 
-  @if $inset > -1 {
+  @if $inset >-1 {
     inset: $inset;
   }
 
