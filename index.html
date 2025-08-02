@@ -49,6 +49,52 @@
     </div>
 
   </header>
+
+  <!-- //Mobile menu section -- start -->
+
+  <div class="mobile-navigation">
+    <label for="checkboxID" class="mobile-navigation__burger">
+      <img class="mobile-navigation__burger-icon" src="./assets/svg/icons8-hamburger.svg" alt="burger menu">
+    </label>
+    <input type="checkbox" id="checkboxID" class="mobile-navigation-toggler">
+    <nav class="mobile-navigation__menu nav">
+
+      <ul class="nav__list">
+        <li class="nav__list-item">
+          <a href="#work" class="nav__list-item-link">How we work</a>
+        </li>
+
+        <li class="nav__list-item">
+          <a href="#about" class="nav__list-item-link">About As</a>
+        </li>
+
+        <li class="nav__list-item">
+          <a href="#experience" class="nav__list-item-link">Experience</a>
+        </li>
+
+        <li class="nav__list-item">
+          <a href="#testimonial" class="nav__list-item-link">Testimonials</a>
+        </li>
+
+        <li class="nav__list-item">
+          <a href="#forms" class="nav__list-item-link">Drop us a line!</a>
+        </li>
+
+        <li class="nav__list-item">
+          <a href="#footer" class="nav__list-item-link">Contacts</a>
+        </li>
+
+      </ul>
+      <label for="checkboxID" class="mobile-navigation__cross">
+        <img class="mobile-navigation__cross-icon" src="./assets/svg/Cross-white.svg" alt="close menu">
+      </label>
+
+    </nav>
+
+  </div>
+  <!-- //Mobile menu section -- end -->
+
+
   <main class="main" aria-label="main content">
     <section class="hero-section" aria-label="hero section">
       <div class="container">
@@ -79,7 +125,7 @@
 
 
     </section>
-    <section class="work-section" aria-label="work section">
+    <section class="work-section" aria-label="work section" id="work">
       <div class="container">
         <div class="work">
           <h2 class="work__title">How we work</h2>
@@ -139,7 +185,7 @@
       </div>
     </section>
     <hr class="divider">
-    <section class="about-section" aria-label="about section">
+    <section class="about-section" aria-label="about section" id="about">
       <div class="container">
         <div class="about">
           <div class="about__quality">
@@ -172,7 +218,7 @@
       </div>
     </section>
     <hr class="divider">
-    <section class="experience-section" aria-label="experience section">
+    <section class="experience-section" aria-label="experience section" id="experience">
       <div class="container">
         <div class="experience">
           <h2 class="experience__title">Our experience</h2>
@@ -210,7 +256,7 @@
       </div>
 
     </section>
-    <section class="testimonial-section" aria-label="testimonial section">
+    <section class="testimonial-section" aria-label="testimonial section" id="testimonial">
       <div class="container">
         <div class="testimonial">
           <h2 class="testimonial__title">Testimonials</h2>
@@ -257,7 +303,7 @@
         </div>
       </div>
     </section>
-    <section class="forms-section" aria-label="forms section">
+    <section class="forms-section" aria-label="forms section" id="forms">
       <div class="container">
         <div class="forms">
 
@@ -282,7 +328,7 @@
       <div class="forms-section__bg-cloud cloud-right"></div>
 
     </section>
-    <footer class="footer" aria-label="footer">
+    <footer class="footer" aria-label="footer" id="footer">
       <div class="container">
         <div class="footer-wrapper">
           <div class="footer__left">
@@ -301,9 +347,12 @@
           </div>
 
           <div class="footer__icons">
-            <a href="linkedin.com" target="_blank" ><img class="linkedin-icon" src="./assets/svg/linkedin.svg" alt="linkedin icon"></a>
-            <a href="facebook.com" target="_blank" ><img class="facebook-icon" src="./assets/svg/facebook.svg" alt="facebook icon"></a>
-            <a href="instagram.com" target="_blank" ><img class="instagram-icon" src="./assets/svg/instagram.svg" alt="instagram icon"></a>
+            <a href="linkedin.com" target="_blank"><img class="linkedin-icon" src="./assets/svg/linkedin.svg"
+                alt="linkedin icon"></a>
+            <a href="facebook.com" target="_blank"><img class="facebook-icon" src="./assets/svg/facebook.svg"
+                alt="facebook icon"></a>
+            <a href="instagram.com" target="_blank"><img class="instagram-icon" src="./assets/svg/instagram.svg"
+                alt="instagram icon"></a>
           </div>
         </div>
       </div>
