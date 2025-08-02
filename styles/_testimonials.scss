@@ -157,7 +157,7 @@
     }
 
     &__points {
-        
+
         @include m.position (relative, 1, -1, bottom, right, 0, 45%);
         @include m.d-flex(space-between, bottom, nowrap, row, 10px, 15px);
         position: absolute;
@@ -168,7 +168,8 @@
             @include m.position (absolute, 1, -1, bottom, right, -23%, 40%);
 
         }
-        @media (max-width: v.$media-sm){
+
+        @media (max-width: v.$media-sm) {
             @include m.position (absolute, 1, -1, bottom, right, -23%, 39%);
         }
 
