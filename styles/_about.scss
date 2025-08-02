@@ -63,11 +63,11 @@
             }
 
             @media (max-width: v.$media-sm) {
-                background: url('../assets/webp/macbook.webp') 250% 95%/400px no-repeat;
+                background: url('../assets/webp/macbook.webp') 169% 95%/400px no-repeat;
             }
 
             @media (max-width: v.$media-min) {
-                background: url('../assets/webp/macbook.webp') 560% 95%/350px no-repeat;
+                background: url('../assets/webp/macbook.webp') 238% 95%/350px no-repeat;
             }
 
         }
@@ -146,7 +146,7 @@
 
                     @include m.position (absolute, -1, -1, top, left, 0, -180px);
 
-                    background: url('../assets/webp/telephone.webp') 37px 113px/80% no-repeat;
+                    background: url('../assets/webp/telephone.webp') 37px 113px/95% no-repeat;
                     rotate: z 60deg;
 
 
@@ -204,7 +204,7 @@
 
             @media (max-width: v.$media-md) {
                 @include m.d-flex(start, start, nowrap, column, 20px, 20px);
-                background: url('../assets/webp/cactus.webp') 100% 156%/400px no-repeat;
+                background: url('../assets/webp/cactus.webp') 100% 156%/350px no-repeat;
             }
 
 

@@ -6,7 +6,7 @@
 
 .testimonial {
     position: relative;
-    padding: 50px 0 150px 50px;
+    padding: 50px 0 150px 20px;
     margin: 0 auto;
 
     @media (max-width: v.$media-lg) {
@@ -82,7 +82,7 @@
         background: url("../assets/webp/testi-card.png") 100% 100%/500px no-repeat;
 
         @media (max-width: v.$media-lg) {
-            scale: 0.9;
+            scale: 0.85;
 
         }
 
@@ -165,7 +165,7 @@
 
         @media (max-width: v.$media-lg) {
             scale: 0.8;
-            @include m.position (absolute, 1, -1, bottom, right, -23%, 40%);
+            @include m.position (absolute, 1, -1, bottom, right, -23%, 42%);
 
         }
 
